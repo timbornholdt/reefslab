@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F175E5BD2A1AC93200206423 /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5BC2A1AC93200206423 /* Brick.swift */; };
+		F175E5BF2A1AC96900206423 /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5BE2A1AC96900206423 /* Paddle.swift */; };
+		F175E5C12A1AC97100206423 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C02A1AC97100206423 /* PowerUp.swift */; };
+		F175E5C32A1AC98600206423 /* PowerDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C22A1AC98600206423 /* PowerDown.swift */; };
+		F175E5C52A1AC99000206423 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C42A1AC99000206423 /* Game.swift */; };
+		F175E5C72A1AC99B00206423 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C62A1AC99B00206423 /* Ball.swift */; };
+		F175E5CB2A1AC9D300206423 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CA2A1AC9D300206423 /* GameController.swift */; };
+		F175E5CD2A1AC9E600206423 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CC2A1AC9E600206423 /* MenuView.swift */; };
+		F175E5CF2A1AC9F300206423 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CE2A1AC9F300206423 /* SettingsView.swift */; };
+		F175E5D12A1ACAA700206423 /* PaddleView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5D02A1ACAA700206423 /* PaddleView.sks */; };
+		F175E5D32A1ACAB500206423 /* PaddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D22A1ACAB500206423 /* PaddleView.swift */; };
+		F175E5D52A1ACAC400206423 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D42A1ACAC400206423 /* BallView.swift */; };
+		F175E5D72A1ACACD00206423 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D62A1ACACD00206423 /* BrickView.swift */; };
+		F175E5D92A1ACAD700206423 /* PowerUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D82A1ACAD700206423 /* PowerUpView.swift */; };
+		F175E5DB2A1ACADF00206423 /* PowerDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5DA2A1ACADF00206423 /* PowerDownView.swift */; };
+		F175E5DD2A1ACAF400206423 /* BallView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5DC2A1ACAF400206423 /* BallView.sks */; };
+		F175E5DF2A1ACB0800206423 /* BrickView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5DE2A1ACB0800206423 /* BrickView.sks */; };
+		F175E5E12A1ACB1F00206423 /* PowerUpView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5E02A1ACB1F00206423 /* PowerUpView.sks */; };
+		F175E5E32A1ACB2E00206423 /* PowerDownView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5E22A1ACB2E00206423 /* PowerDownView.sks */; };
 		F18143CD2A17DF720035E687 /* ReefslabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143CC2A17DF720035E687 /* ReefslabApp.swift */; };
 		F18143CF2A17DF720035E687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143CE2A17DF720035E687 /* ContentView.swift */; };
 		F18143D12A17DF730035E687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18143D02A17DF730035E687 /* Assets.xcassets */; };
@@ -34,6 +53,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F175E5BC2A1AC93200206423 /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Brick.swift; path = ../../../reefslab/Reefslab/Models/Brick.swift; sourceTree = "<group>"; };
+		F175E5BE2A1AC96900206423 /* Paddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Paddle.swift; path = ../../../reefslab/Reefslab/Models/Paddle.swift; sourceTree = "<group>"; };
+		F175E5C02A1AC97100206423 /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerUp.swift; path = ../../../reefslab/Reefslab/Models/PowerUp.swift; sourceTree = "<group>"; };
+		F175E5C22A1AC98600206423 /* PowerDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerDown.swift; path = ../../../reefslab/Reefslab/Models/PowerDown.swift; sourceTree = "<group>"; };
+		F175E5C42A1AC99000206423 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../../../reefslab/Reefslab/Models/Game.swift; sourceTree = "<group>"; };
+		F175E5C62A1AC99B00206423 /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ball.swift; path = ../../../reefslab/Reefslab/Models/Ball.swift; sourceTree = "<group>"; };
+		F175E5CA2A1AC9D300206423 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = ../../../reefslab/Reefslab/Controllers/GameController.swift; sourceTree = "<group>"; };
+		F175E5CC2A1AC9E600206423 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../../../reefslab/Reefslab/Views/MenuView.swift; sourceTree = "<group>"; };
+		F175E5CE2A1AC9F300206423 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = ../../../reefslab/Reefslab/Views/SettingsView.swift; sourceTree = "<group>"; };
+		F175E5D02A1ACAA700206423 /* PaddleView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PaddleView.sks; path = ../../../reefslab/Reefslab/Views/PaddleView.sks; sourceTree = "<group>"; };
+		F175E5D22A1ACAB500206423 /* PaddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddleView.swift; path = ../../../reefslab/Reefslab/Views/PaddleView.swift; sourceTree = "<group>"; };
+		F175E5D42A1ACAC400206423 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BallView.swift; path = ../../../reefslab/Reefslab/Views/BallView.swift; sourceTree = "<group>"; };
+		F175E5D62A1ACACD00206423 /* BrickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrickView.swift; path = ../../../reefslab/Reefslab/Views/BrickView.swift; sourceTree = "<group>"; };
+		F175E5D82A1ACAD700206423 /* PowerUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerUpView.swift; path = ../../../reefslab/Reefslab/Views/PowerUpView.swift; sourceTree = "<group>"; };
+		F175E5DA2A1ACADF00206423 /* PowerDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerDownView.swift; path = ../../../reefslab/Reefslab/Views/PowerDownView.swift; sourceTree = "<group>"; };
+		F175E5DC2A1ACAF400206423 /* BallView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BallView.sks; path = ../../../reefslab/Reefslab/Views/BallView.sks; sourceTree = "<group>"; };
+		F175E5DE2A1ACB0800206423 /* BrickView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BrickView.sks; path = ../../../reefslab/Reefslab/Views/BrickView.sks; sourceTree = "<group>"; };
+		F175E5E02A1ACB1F00206423 /* PowerUpView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PowerUpView.sks; path = ../../../reefslab/Reefslab/Views/PowerUpView.sks; sourceTree = "<group>"; };
+		F175E5E22A1ACB2E00206423 /* PowerDownView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PowerDownView.sks; path = ../../../reefslab/Reefslab/Views/PowerDownView.sks; sourceTree = "<group>"; };
 		F18143C92A17DF720035E687 /* Reefslab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reefslab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18143CC2A17DF720035E687 /* ReefslabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefslabApp.swift; sourceTree = "<group>"; };
 		F18143CE2A17DF720035E687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +109,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F175E5B92A1AC8FD00206423 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F175E5C62A1AC99B00206423 /* Ball.swift */,
+				F175E5BC2A1AC93200206423 /* Brick.swift */,
+				F175E5C42A1AC99000206423 /* Game.swift */,
+				F175E5BE2A1AC96900206423 /* Paddle.swift */,
+				F175E5C22A1AC98600206423 /* PowerDown.swift */,
+				F175E5C02A1AC97100206423 /* PowerUp.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F175E5BA2A1AC90800206423 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F175E5CC2A1AC9E600206423 /* MenuView.swift */,
+				F175E5CE2A1AC9F300206423 /* SettingsView.swift */,
+				F175E5D02A1ACAA700206423 /* PaddleView.sks */,
+				F175E5D22A1ACAB500206423 /* PaddleView.swift */,
+				F175E5DC2A1ACAF400206423 /* BallView.sks */,
+				F175E5D42A1ACAC400206423 /* BallView.swift */,
+				F175E5DE2A1ACB0800206423 /* BrickView.sks */,
+				F175E5D62A1ACACD00206423 /* BrickView.swift */,
+				F175E5E02A1ACB1F00206423 /* PowerUpView.sks */,
+				F175E5D82A1ACAD700206423 /* PowerUpView.swift */,
+				F175E5E22A1ACB2E00206423 /* PowerDownView.sks */,
+				F175E5DA2A1ACADF00206423 /* PowerDownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F175E5BB2A1AC91200206423 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F175E5CA2A1AC9D300206423 /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F18143C02A17DF720035E687 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +172,9 @@
 		F18143CB2A17DF720035E687 /* Reefslab */ = {
 			isa = PBXGroup;
 			children = (
+				F175E5B92A1AC8FD00206423 /* Models */,
+				F175E5BA2A1AC90800206423 /* Views */,
+				F175E5BB2A1AC91200206423 /* Controllers */,
 				F18143CC2A17DF720035E687 /* ReefslabApp.swift */,
 				F18143CE2A17DF720035E687 /* ContentView.swift */,
 				F18143D02A17DF730035E687 /* Assets.xcassets */,
@@ -231,8 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F175E5D12A1ACAA700206423 /* PaddleView.sks in Resources */,
+				F175E5DD2A1ACAF400206423 /* BallView.sks in Resources */,
 				F18143D42A17DF730035E687 /* Preview Assets.xcassets in Resources */,
 				F18143D12A17DF730035E687 /* Assets.xcassets in Resources */,
+				F175E5DF2A1ACB0800206423 /* BrickView.sks in Resources */,
+				F175E5E12A1ACB1F00206423 /* PowerUpView.sks in Resources */,
+				F175E5E32A1ACB2E00206423 /* PowerDownView.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +343,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F175E5C72A1AC99B00206423 /* Ball.swift in Sources */,
+				F175E5D52A1ACAC400206423 /* BallView.swift in Sources */,
+				F175E5D72A1ACACD00206423 /* BrickView.swift in Sources */,
 				F18143CF2A17DF720035E687 /* ContentView.swift in Sources */,
+				F175E5BF2A1AC96900206423 /* Paddle.swift in Sources */,
+				F175E5C52A1AC99000206423 /* Game.swift in Sources */,
+				F175E5D32A1ACAB500206423 /* PaddleView.swift in Sources */,
+				F175E5CB2A1AC9D300206423 /* GameController.swift in Sources */,
+				F175E5CD2A1AC9E600206423 /* MenuView.swift in Sources */,
 				F18143CD2A17DF720035E687 /* ReefslabApp.swift in Sources */,
+				F175E5C32A1AC98600206423 /* PowerDown.swift in Sources */,
+				F175E5C12A1AC97100206423 /* PowerUp.swift in Sources */,
+				F175E5BD2A1AC93200206423 /* Brick.swift in Sources */,
+				F175E5D92A1ACAD700206423 /* PowerUpView.swift in Sources */,
+				F175E5DB2A1ACADF00206423 /* PowerDownView.swift in Sources */,
+				F175E5CF2A1AC9F300206423 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
