@@ -7,99 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F175E5BD2A1AC93200206423 /* Brick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5BC2A1AC93200206423 /* Brick.swift */; };
-		F175E5BF2A1AC96900206423 /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5BE2A1AC96900206423 /* Paddle.swift */; };
-		F175E5C12A1AC97100206423 /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C02A1AC97100206423 /* PowerUp.swift */; };
-		F175E5C32A1AC98600206423 /* PowerDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C22A1AC98600206423 /* PowerDown.swift */; };
-		F175E5C52A1AC99000206423 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C42A1AC99000206423 /* Game.swift */; };
-		F175E5C72A1AC99B00206423 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5C62A1AC99B00206423 /* Ball.swift */; };
-		F175E5CB2A1AC9D300206423 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CA2A1AC9D300206423 /* GameController.swift */; };
-		F175E5CD2A1AC9E600206423 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CC2A1AC9E600206423 /* MenuView.swift */; };
-		F175E5CF2A1AC9F300206423 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5CE2A1AC9F300206423 /* SettingsView.swift */; };
-		F175E5D12A1ACAA700206423 /* PaddleView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5D02A1ACAA700206423 /* PaddleView.sks */; };
-		F175E5D32A1ACAB500206423 /* PaddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D22A1ACAB500206423 /* PaddleView.swift */; };
-		F175E5D52A1ACAC400206423 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D42A1ACAC400206423 /* BallView.swift */; };
-		F175E5D72A1ACACD00206423 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D62A1ACACD00206423 /* BrickView.swift */; };
-		F175E5D92A1ACAD700206423 /* PowerUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5D82A1ACAD700206423 /* PowerUpView.swift */; };
-		F175E5DB2A1ACADF00206423 /* PowerDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E5DA2A1ACADF00206423 /* PowerDownView.swift */; };
-		F175E5DD2A1ACAF400206423 /* BallView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5DC2A1ACAF400206423 /* BallView.sks */; };
-		F175E5DF2A1ACB0800206423 /* BrickView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5DE2A1ACB0800206423 /* BrickView.sks */; };
-		F175E5E12A1ACB1F00206423 /* PowerUpView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5E02A1ACB1F00206423 /* PowerUpView.sks */; };
-		F175E5E32A1ACB2E00206423 /* PowerDownView.sks in Resources */ = {isa = PBXBuildFile; fileRef = F175E5E22A1ACB2E00206423 /* PowerDownView.sks */; };
-		F18143CD2A17DF720035E687 /* ReefslabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143CC2A17DF720035E687 /* ReefslabApp.swift */; };
-		F18143CF2A17DF720035E687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143CE2A17DF720035E687 /* ContentView.swift */; };
-		F18143D12A17DF730035E687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18143D02A17DF730035E687 /* Assets.xcassets */; };
-		F18143D42A17DF730035E687 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18143D32A17DF730035E687 /* Preview Assets.xcassets */; };
-		F18143DE2A17DF730035E687 /* ReefslabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143DD2A17DF730035E687 /* ReefslabTests.swift */; };
-		F18143E82A17DF730035E687 /* ReefslabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143E72A17DF730035E687 /* ReefslabUITests.swift */; };
-		F18143EA2A17DF730035E687 /* ReefslabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18143E92A17DF730035E687 /* ReefslabUITestsLaunchTests.swift */; };
+		F15BEDE72A2B90F900976810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEDE62A2B90F900976810 /* AppDelegate.swift */; };
+		F15BEDE92A2B90F900976810 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F15BEDE82A2B90F900976810 /* GameScene.sks */; };
+		F15BEDEB2A2B90F900976810 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F15BEDEA2A2B90F900976810 /* Actions.sks */; };
+		F15BEDED2A2B90F900976810 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEDEC2A2B90F900976810 /* GameScene.swift */; };
+		F15BEDEF2A2B90F900976810 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEDEE2A2B90F900976810 /* GameViewController.swift */; };
+		F15BEDF22A2B90F900976810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15BEDF02A2B90F900976810 /* Main.storyboard */; };
+		F15BEDF42A2B90FA00976810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15BEDF32A2B90FA00976810 /* Assets.xcassets */; };
+		F15BEDF72A2B90FA00976810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15BEDF52A2B90FA00976810 /* LaunchScreen.storyboard */; };
+		F15BEDFE2A2CC0E100976810 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEDFD2A2CC0E100976810 /* UIColor+Extensions.swift */; };
+		F15BEE002A2CC5C100976810 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEDFF2A2CC5C100976810 /* GameOverScene.swift */; };
+		F15BEE022A2CD5EF00976810 /* SKMultilineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15BEE012A2CD5EF00976810 /* SKMultilineLabel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F18143DA2A17DF730035E687 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F18143C12A17DF720035E687 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F18143C82A17DF720035E687;
-			remoteInfo = Reefslab;
-		};
-		F18143E42A17DF730035E687 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F18143C12A17DF720035E687 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F18143C82A17DF720035E687;
-			remoteInfo = Reefslab;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		F175E5BC2A1AC93200206423 /* Brick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Brick.swift; path = ../../../reefslab/Reefslab/Models/Brick.swift; sourceTree = "<group>"; };
-		F175E5BE2A1AC96900206423 /* Paddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Paddle.swift; path = ../../../reefslab/Reefslab/Models/Paddle.swift; sourceTree = "<group>"; };
-		F175E5C02A1AC97100206423 /* PowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerUp.swift; path = ../../../reefslab/Reefslab/Models/PowerUp.swift; sourceTree = "<group>"; };
-		F175E5C22A1AC98600206423 /* PowerDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerDown.swift; path = ../../../reefslab/Reefslab/Models/PowerDown.swift; sourceTree = "<group>"; };
-		F175E5C42A1AC99000206423 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../../../reefslab/Reefslab/Models/Game.swift; sourceTree = "<group>"; };
-		F175E5C62A1AC99B00206423 /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ball.swift; path = ../../../reefslab/Reefslab/Models/Ball.swift; sourceTree = "<group>"; };
-		F175E5CA2A1AC9D300206423 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameController.swift; path = ../../../reefslab/Reefslab/Controllers/GameController.swift; sourceTree = "<group>"; };
-		F175E5CC2A1AC9E600206423 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = ../../../reefslab/Reefslab/Views/MenuView.swift; sourceTree = "<group>"; };
-		F175E5CE2A1AC9F300206423 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = ../../../reefslab/Reefslab/Views/SettingsView.swift; sourceTree = "<group>"; };
-		F175E5D02A1ACAA700206423 /* PaddleView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PaddleView.sks; path = ../../../reefslab/Reefslab/Views/PaddleView.sks; sourceTree = "<group>"; };
-		F175E5D22A1ACAB500206423 /* PaddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddleView.swift; path = ../../../reefslab/Reefslab/Views/PaddleView.swift; sourceTree = "<group>"; };
-		F175E5D42A1ACAC400206423 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BallView.swift; path = ../../../reefslab/Reefslab/Views/BallView.swift; sourceTree = "<group>"; };
-		F175E5D62A1ACACD00206423 /* BrickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrickView.swift; path = ../../../reefslab/Reefslab/Views/BrickView.swift; sourceTree = "<group>"; };
-		F175E5D82A1ACAD700206423 /* PowerUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerUpView.swift; path = ../../../reefslab/Reefslab/Views/PowerUpView.swift; sourceTree = "<group>"; };
-		F175E5DA2A1ACADF00206423 /* PowerDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PowerDownView.swift; path = ../../../reefslab/Reefslab/Views/PowerDownView.swift; sourceTree = "<group>"; };
-		F175E5DC2A1ACAF400206423 /* BallView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BallView.sks; path = ../../../reefslab/Reefslab/Views/BallView.sks; sourceTree = "<group>"; };
-		F175E5DE2A1ACB0800206423 /* BrickView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = BrickView.sks; path = ../../../reefslab/Reefslab/Views/BrickView.sks; sourceTree = "<group>"; };
-		F175E5E02A1ACB1F00206423 /* PowerUpView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PowerUpView.sks; path = ../../../reefslab/Reefslab/Views/PowerUpView.sks; sourceTree = "<group>"; };
-		F175E5E22A1ACB2E00206423 /* PowerDownView.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PowerDownView.sks; path = ../../../reefslab/Reefslab/Views/PowerDownView.sks; sourceTree = "<group>"; };
-		F18143C92A17DF720035E687 /* Reefslab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reefslab.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18143CC2A17DF720035E687 /* ReefslabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefslabApp.swift; sourceTree = "<group>"; };
-		F18143CE2A17DF720035E687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F18143D02A17DF730035E687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F18143D32A17DF730035E687 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F18143D92A17DF730035E687 /* ReefslabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReefslabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18143DD2A17DF730035E687 /* ReefslabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefslabTests.swift; sourceTree = "<group>"; };
-		F18143E32A17DF730035E687 /* ReefslabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReefslabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F18143E72A17DF730035E687 /* ReefslabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefslabUITests.swift; sourceTree = "<group>"; };
-		F18143E92A17DF730035E687 /* ReefslabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReefslabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F15BEDE32A2B90F900976810 /* Reefslab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reefslab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15BEDE62A2B90F900976810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F15BEDE82A2B90F900976810 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F15BEDEA2A2B90F900976810 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F15BEDEC2A2B90F900976810 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F15BEDEE2A2B90F900976810 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F15BEDF12A2B90F900976810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F15BEDF32A2B90FA00976810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F15BEDF62A2B90FA00976810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F15BEDFD2A2CC0E100976810 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		F15BEDFF2A2CC5C100976810 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		F15BEE012A2CD5EF00976810 /* SKMultilineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKMultilineLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F18143C62A17DF720035E687 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143D62A17DF730035E687 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143E02A17DF730035E687 /* Frameworks */ = {
+		F15BEDE02A2B90F900976810 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,115 +46,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F175E5B92A1AC8FD00206423 /* Models */ = {
+		F15BEDDA2A2B90F900976810 = {
 			isa = PBXGroup;
 			children = (
-				F175E5C62A1AC99B00206423 /* Ball.swift */,
-				F175E5BC2A1AC93200206423 /* Brick.swift */,
-				F175E5C42A1AC99000206423 /* Game.swift */,
-				F175E5BE2A1AC96900206423 /* Paddle.swift */,
-				F175E5C22A1AC98600206423 /* PowerDown.swift */,
-				F175E5C02A1AC97100206423 /* PowerUp.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F175E5BA2A1AC90800206423 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F175E5CC2A1AC9E600206423 /* MenuView.swift */,
-				F175E5CE2A1AC9F300206423 /* SettingsView.swift */,
-				F175E5D02A1ACAA700206423 /* PaddleView.sks */,
-				F175E5D22A1ACAB500206423 /* PaddleView.swift */,
-				F175E5DC2A1ACAF400206423 /* BallView.sks */,
-				F175E5D42A1ACAC400206423 /* BallView.swift */,
-				F175E5DE2A1ACB0800206423 /* BrickView.sks */,
-				F175E5D62A1ACACD00206423 /* BrickView.swift */,
-				F175E5E02A1ACB1F00206423 /* PowerUpView.sks */,
-				F175E5D82A1ACAD700206423 /* PowerUpView.swift */,
-				F175E5E22A1ACB2E00206423 /* PowerDownView.sks */,
-				F175E5DA2A1ACADF00206423 /* PowerDownView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F175E5BB2A1AC91200206423 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F175E5CA2A1AC9D300206423 /* GameController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F18143C02A17DF720035E687 = {
-			isa = PBXGroup;
-			children = (
-				F18143CB2A17DF720035E687 /* Reefslab */,
-				F18143DC2A17DF730035E687 /* ReefslabTests */,
-				F18143E62A17DF730035E687 /* ReefslabUITests */,
-				F18143CA2A17DF720035E687 /* Products */,
+				F15BEDE52A2B90F900976810 /* Reefslab */,
+				F15BEDE42A2B90F900976810 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F18143CA2A17DF720035E687 /* Products */ = {
+		F15BEDE42A2B90F900976810 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F18143C92A17DF720035E687 /* Reefslab.app */,
-				F18143D92A17DF730035E687 /* ReefslabTests.xctest */,
-				F18143E32A17DF730035E687 /* ReefslabUITests.xctest */,
+				F15BEDE32A2B90F900976810 /* Reefslab.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F18143CB2A17DF720035E687 /* Reefslab */ = {
+		F15BEDE52A2B90F900976810 /* Reefslab */ = {
 			isa = PBXGroup;
 			children = (
-				F175E5B92A1AC8FD00206423 /* Models */,
-				F175E5BA2A1AC90800206423 /* Views */,
-				F175E5BB2A1AC91200206423 /* Controllers */,
-				F18143CC2A17DF720035E687 /* ReefslabApp.swift */,
-				F18143CE2A17DF720035E687 /* ContentView.swift */,
-				F18143D02A17DF730035E687 /* Assets.xcassets */,
-				F18143D22A17DF730035E687 /* Preview Content */,
+				F15BEDE62A2B90F900976810 /* AppDelegate.swift */,
+				F15BEDE82A2B90F900976810 /* GameScene.sks */,
+				F15BEDEA2A2B90F900976810 /* Actions.sks */,
+				F15BEDEC2A2B90F900976810 /* GameScene.swift */,
+				F15BEDFF2A2CC5C100976810 /* GameOverScene.swift */,
+				F15BEDEE2A2B90F900976810 /* GameViewController.swift */,
+				F15BEDF02A2B90F900976810 /* Main.storyboard */,
+				F15BEDF32A2B90FA00976810 /* Assets.xcassets */,
+				F15BEDF52A2B90FA00976810 /* LaunchScreen.storyboard */,
+				F15BEDFD2A2CC0E100976810 /* UIColor+Extensions.swift */,
+				F15BEE012A2CD5EF00976810 /* SKMultilineLabel.swift */,
 			);
 			path = Reefslab;
-			sourceTree = "<group>";
-		};
-		F18143D22A17DF730035E687 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F18143D32A17DF730035E687 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		F18143DC2A17DF730035E687 /* ReefslabTests */ = {
-			isa = PBXGroup;
-			children = (
-				F18143DD2A17DF730035E687 /* ReefslabTests.swift */,
-			);
-			path = ReefslabTests;
-			sourceTree = "<group>";
-		};
-		F18143E62A17DF730035E687 /* ReefslabUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F18143E72A17DF730035E687 /* ReefslabUITests.swift */,
-				F18143E92A17DF730035E687 /* ReefslabUITestsLaunchTests.swift */,
-			);
-			path = ReefslabUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F18143C82A17DF720035E687 /* Reefslab */ = {
+		F15BEDE22A2B90F900976810 /* Reefslab */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F18143ED2A17DF730035E687 /* Build configuration list for PBXNativeTarget "Reefslab" */;
+			buildConfigurationList = F15BEDFA2A2B90FA00976810 /* Build configuration list for PBXNativeTarget "Reefslab" */;
 			buildPhases = (
-				F18143C52A17DF720035E687 /* Sources */,
-				F18143C62A17DF720035E687 /* Frameworks */,
-				F18143C72A17DF720035E687 /* Resources */,
+				F15BEDDF2A2B90F900976810 /* Sources */,
+				F15BEDE02A2B90F900976810 /* Frameworks */,
+				F15BEDE12A2B90F900976810 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -225,69 +97,25 @@
 			);
 			name = Reefslab;
 			productName = Reefslab;
-			productReference = F18143C92A17DF720035E687 /* Reefslab.app */;
+			productReference = F15BEDE32A2B90F900976810 /* Reefslab.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F18143D82A17DF730035E687 /* ReefslabTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F18143F02A17DF730035E687 /* Build configuration list for PBXNativeTarget "ReefslabTests" */;
-			buildPhases = (
-				F18143D52A17DF730035E687 /* Sources */,
-				F18143D62A17DF730035E687 /* Frameworks */,
-				F18143D72A17DF730035E687 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F18143DB2A17DF730035E687 /* PBXTargetDependency */,
-			);
-			name = ReefslabTests;
-			productName = ReefslabTests;
-			productReference = F18143D92A17DF730035E687 /* ReefslabTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F18143E22A17DF730035E687 /* ReefslabUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F18143F32A17DF730035E687 /* Build configuration list for PBXNativeTarget "ReefslabUITests" */;
-			buildPhases = (
-				F18143DF2A17DF730035E687 /* Sources */,
-				F18143E02A17DF730035E687 /* Frameworks */,
-				F18143E12A17DF730035E687 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F18143E52A17DF730035E687 /* PBXTargetDependency */,
-			);
-			name = ReefslabUITests;
-			productName = ReefslabUITests;
-			productReference = F18143E32A17DF730035E687 /* ReefslabUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F18143C12A17DF720035E687 /* Project object */ = {
+		F15BEDDB2A2B90F900976810 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					F18143C82A17DF720035E687 = {
+					F15BEDE22A2B90F900976810 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					F18143D82A17DF730035E687 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = F18143C82A17DF720035E687;
-					};
-					F18143E22A17DF730035E687 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = F18143C82A17DF720035E687;
 					};
 				};
 			};
-			buildConfigurationList = F18143C42A17DF720035E687 /* Build configuration list for PBXProject "Reefslab" */;
+			buildConfigurationList = F15BEDDE2A2B90F900976810 /* Build configuration list for PBXProject "Reefslab" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,107 +123,68 @@
 				en,
 				Base,
 			);
-			mainGroup = F18143C02A17DF720035E687;
-			productRefGroup = F18143CA2A17DF720035E687 /* Products */;
+			mainGroup = F15BEDDA2A2B90F900976810;
+			productRefGroup = F15BEDE42A2B90F900976810 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F18143C82A17DF720035E687 /* Reefslab */,
-				F18143D82A17DF730035E687 /* ReefslabTests */,
-				F18143E22A17DF730035E687 /* ReefslabUITests */,
+				F15BEDE22A2B90F900976810 /* Reefslab */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F18143C72A17DF720035E687 /* Resources */ = {
+		F15BEDE12A2B90F900976810 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F175E5D12A1ACAA700206423 /* PaddleView.sks in Resources */,
-				F175E5DD2A1ACAF400206423 /* BallView.sks in Resources */,
-				F18143D42A17DF730035E687 /* Preview Assets.xcassets in Resources */,
-				F18143D12A17DF730035E687 /* Assets.xcassets in Resources */,
-				F175E5DF2A1ACB0800206423 /* BrickView.sks in Resources */,
-				F175E5E12A1ACB1F00206423 /* PowerUpView.sks in Resources */,
-				F175E5E32A1ACB2E00206423 /* PowerDownView.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143D72A17DF730035E687 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143E12A17DF730035E687 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F15BEDF22A2B90F900976810 /* Main.storyboard in Resources */,
+				F15BEDE92A2B90F900976810 /* GameScene.sks in Resources */,
+				F15BEDF42A2B90FA00976810 /* Assets.xcassets in Resources */,
+				F15BEDF72A2B90FA00976810 /* LaunchScreen.storyboard in Resources */,
+				F15BEDEB2A2B90F900976810 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F18143C52A17DF720035E687 /* Sources */ = {
+		F15BEDDF2A2B90F900976810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F175E5C72A1AC99B00206423 /* Ball.swift in Sources */,
-				F175E5D52A1ACAC400206423 /* BallView.swift in Sources */,
-				F175E5D72A1ACACD00206423 /* BrickView.swift in Sources */,
-				F18143CF2A17DF720035E687 /* ContentView.swift in Sources */,
-				F175E5BF2A1AC96900206423 /* Paddle.swift in Sources */,
-				F175E5C52A1AC99000206423 /* Game.swift in Sources */,
-				F175E5D32A1ACAB500206423 /* PaddleView.swift in Sources */,
-				F175E5CB2A1AC9D300206423 /* GameController.swift in Sources */,
-				F175E5CD2A1AC9E600206423 /* MenuView.swift in Sources */,
-				F18143CD2A17DF720035E687 /* ReefslabApp.swift in Sources */,
-				F175E5C32A1AC98600206423 /* PowerDown.swift in Sources */,
-				F175E5C12A1AC97100206423 /* PowerUp.swift in Sources */,
-				F175E5BD2A1AC93200206423 /* Brick.swift in Sources */,
-				F175E5D92A1ACAD700206423 /* PowerUpView.swift in Sources */,
-				F175E5DB2A1ACADF00206423 /* PowerDownView.swift in Sources */,
-				F175E5CF2A1AC9F300206423 /* SettingsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143D52A17DF730035E687 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F18143DE2A17DF730035E687 /* ReefslabTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F18143DF2A17DF730035E687 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F18143EA2A17DF730035E687 /* ReefslabUITestsLaunchTests.swift in Sources */,
-				F18143E82A17DF730035E687 /* ReefslabUITests.swift in Sources */,
+				F15BEE002A2CC5C100976810 /* GameOverScene.swift in Sources */,
+				F15BEDED2A2B90F900976810 /* GameScene.swift in Sources */,
+				F15BEE022A2CD5EF00976810 /* SKMultilineLabel.swift in Sources */,
+				F15BEDEF2A2B90F900976810 /* GameViewController.swift in Sources */,
+				F15BEDE72A2B90F900976810 /* AppDelegate.swift in Sources */,
+				F15BEDFE2A2CC0E100976810 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		F18143DB2A17DF730035E687 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F18143C82A17DF720035E687 /* Reefslab */;
-			targetProxy = F18143DA2A17DF730035E687 /* PBXContainerItemProxy */;
+/* Begin PBXVariantGroup section */
+		F15BEDF02A2B90F900976810 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15BEDF12A2B90F900976810 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
 		};
-		F18143E52A17DF730035E687 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F18143C82A17DF720035E687 /* Reefslab */;
-			targetProxy = F18143E42A17DF730035E687 /* PBXContainerItemProxy */;
+		F15BEDF52A2B90FA00976810 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15BEDF62A2B90FA00976810 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
 		};
-/* End PBXTargetDependency section */
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F18143EB2A17DF730035E687 /* Debug */ = {
+		F15BEDF82A2B90FA00976810 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -455,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		F18143EC2A17DF730035E687 /* Release */ = {
+		F15BEDF92A2B90FA00976810 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,21 +298,20 @@
 			};
 			name = Release;
 		};
-		F18143EE2A17DF730035E687 /* Debug */ = {
+		F15BEDFB2A2B90FA00976810 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Reefslab/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,21 +325,20 @@
 			};
 			name = Debug;
 		};
-		F18143EF2A17DF730035E687 /* Release */ = {
+		F15BEDFC2A2B90FA00976810 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Reefslab/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,121 +349,31 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F18143F12A17DF730035E687 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = holdings.chinlock.ReefslabTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reefslab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reefslab";
-			};
-			name = Debug;
-		};
-		F18143F22A17DF730035E687 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = holdings.chinlock.ReefslabTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Reefslab.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Reefslab";
-			};
-			name = Release;
-		};
-		F18143F42A17DF730035E687 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = holdings.chinlock.ReefslabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Reefslab;
-			};
-			name = Debug;
-		};
-		F18143F52A17DF730035E687 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = holdings.chinlock.ReefslabUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Reefslab;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F18143C42A17DF720035E687 /* Build configuration list for PBXProject "Reefslab" */ = {
+		F15BEDDE2A2B90F900976810 /* Build configuration list for PBXProject "Reefslab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F18143EB2A17DF730035E687 /* Debug */,
-				F18143EC2A17DF730035E687 /* Release */,
+				F15BEDF82A2B90FA00976810 /* Debug */,
+				F15BEDF92A2B90FA00976810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F18143ED2A17DF730035E687 /* Build configuration list for PBXNativeTarget "Reefslab" */ = {
+		F15BEDFA2A2B90FA00976810 /* Build configuration list for PBXNativeTarget "Reefslab" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F18143EE2A17DF730035E687 /* Debug */,
-				F18143EF2A17DF730035E687 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F18143F02A17DF730035E687 /* Build configuration list for PBXNativeTarget "ReefslabTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F18143F12A17DF730035E687 /* Debug */,
-				F18143F22A17DF730035E687 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F18143F32A17DF730035E687 /* Build configuration list for PBXNativeTarget "ReefslabUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F18143F42A17DF730035E687 /* Debug */,
-				F18143F52A17DF730035E687 /* Release */,
+				F15BEDFB2A2B90FA00976810 /* Debug */,
+				F15BEDFC2A2B90FA00976810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F18143C12A17DF720035E687 /* Project object */;
+	rootObject = F15BEDDB2A2B90F900976810 /* Project object */;
 }
