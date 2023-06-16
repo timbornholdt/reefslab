@@ -5,6 +5,10 @@
 //  Created by Tim Bornholdt on 6/3/23.
 //
 
+// TODO: The ball collides with the paddle and then shoots straight up and down. That makes it next to impossible to get it back to traveling at a more comfortable angle.
+// TODO: Add rotation to the ball to see how that works.
+// TODO: Experiment with how bricks populate on the screen. Creating some sort of standard template that I feed into the game engine to spit out some creative levels.
+
 import SpriteKit
 import GameplayKit
 import AVFoundation
@@ -12,6 +16,7 @@ import AVFoundation
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var fingerIsOnPaddle = false
+    var ballIsInMotion = false
     
     let ballCategoryName = "ball"
     let paddleCategoryName = "paddle"
@@ -21,6 +26,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let bottomCategory:UInt32 = 0x1 << 1
     let brickCategory:UInt32 = 0x1 << 2
     let paddleCategory:UInt32 = 0x1 << 3
+    
+    let ball = SKSpriteNode(imageNamed: "ball")
     
     override init(size: CGSize) {
         super .init(size: size)
@@ -32,29 +39,30 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsBody = worldBorder
         self.physicsBody?.friction = 0
         
-        let ball = SKSpriteNode(imageNamed: "ball")
-        ball.name = ballCategoryName
-        ball.position = CGPointMake(self.frame.size.width / 4, self.frame.size.height / 4)
-        ball.size = CGSize(width: 50, height: 50)
-        self.addChild(ball)
-        
-        ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.frame.size.width / 2)
-        ball.physicsBody?.friction = 0
-        ball.physicsBody?.restitution = 1
-        ball.physicsBody?.linearDamping = 0
-        ball.physicsBody?.allowsRotation = false
-        ball.physicsBody?.applyImpulse(CGVectorMake(30, -30))
-        
-        let paddle = SKShapeNode(rectOf: CGSize(width: 200, height: 5))
+        let paddle = SKShapeNode(rectOf: CGSize(width: 50, height: 5))
         paddle.name = paddleCategoryName
         paddle.fillColor = SKColor.white
-        paddle.position = CGPointMake(CGRectGetMidX(self.frame), paddle.frame.size.height * 4)
+        paddle.position = CGPoint(x: self.frame.midX, y: paddle.frame.size.height * 4)
         self.addChild(paddle)
         
         paddle.physicsBody = SKPhysicsBody(rectangleOf: paddle.frame.size)
         paddle.physicsBody?.friction = 0.4
         paddle.physicsBody?.restitution = 0
         paddle.physicsBody?.isDynamic = false
+        
+        ball.name = ballCategoryName
+        ball.size = CGSize(width: 50, height: 50)
+        let paddleHeight = paddle.frame.size.height
+        let ballHeight = ball.size.height
+        ball.position = CGPoint(x: paddle.position.x, y: paddle.position.y + paddleHeight/2 + ballHeight/2)
+        self.addChild(ball)
+
+        ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.frame.size.width / 2)
+        ball.physicsBody?.friction = 0
+        ball.physicsBody?.restitution = 1
+        ball.physicsBody?.linearDamping = 0
+        ball.physicsBody?.allowsRotation = false
+//        ball.physicsBody?.applyImpulse(CGVectorMake(30, -30))
         
         let bottomRect = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, 1)
         let bottom = SKNode()
@@ -67,8 +75,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         ball.physicsBody?.contactTestBitMask = bottomCategory | brickCategory
         
-        let numberOfRows = 1
-        let numberOfBricks = 3
+        let numberOfRows = 5
+        let numberOfBricks = 7
         let brickWidth = 30
         let padding:Float = 20
         
@@ -123,6 +131,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 fingerIsOnPaddle = true
             }
         }
+        
+        launchBall()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -201,4 +211,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    func launchBall() {
+        guard !ballIsInMotion else { return }
+
+        // Determine direction of impulse: +1 for right, -1 for left
+        let direction = arc4random_uniform(2) == 0 ? CGFloat(1) : CGFloat(-1)
+
+        // Apply the impulse to the ball at 45 degree angle
+        let angleInRadians = CGFloat.pi / 4
+        let impulseVector = CGVector(dx: cos(angleInRadians) * direction, dy: sin(angleInRadians))
+        let impulseMagnitude: CGFloat = 30  // Adjust this as needed
+        ball.physicsBody?.applyImpulse(CGVector(dx: impulseVector.dx * impulseMagnitude, dy: impulseVector.dy * impulseMagnitude))
+
+        ballIsInMotion = true
+    }
+
 }
