@@ -27,7 +27,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let brickCategory:UInt32 = 0x1 << 2
     let paddleCategory:UInt32 = 0x1 << 3
     
-    let ball = SKSpriteNode(imageNamed: "ball")
+    let ball = SKShapeNode(circleOfRadius: 5)
     
     override init(size: CGSize) {
         super .init(size: size)
@@ -51,10 +51,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         paddle.physicsBody?.isDynamic = false
         
         ball.name = ballCategoryName
-        ball.size = CGSize(width: 50, height: 50)
+        ball.fillColor = .white  // Choose whatever color you like
+        ball.strokeColor = .white  // If you want an outline, otherwise you can remove this line
         let paddleHeight = paddle.frame.size.height
-        let ballHeight = ball.size.height
-        ball.position = CGPoint(x: paddle.position.x, y: paddle.position.y + paddleHeight/2 + ballHeight/2)
+        ball.position = CGPoint(x: paddle.position.x, y: paddle.position.y + paddleHeight/2 + ball.frame.size.height/2)
         self.addChild(ball)
 
         ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.frame.size.width / 2)
@@ -158,7 +158,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         var firstBody = SKPhysicsBody()
         var secondBody = SKPhysicsBody()
-        
+            
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
             firstBody = contact.bodyA
             secondBody = contact.bodyB
@@ -166,32 +166,45 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             firstBody = contact.bodyB
             secondBody = contact.bodyA
         }
-        
+            
         if firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == bottomCategory {
             let gameOverScene = GameOverScene(size: self.frame.size, playerWon: false)
             self.view?.presentScene(gameOverScene)
         }
         
         if firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == brickCategory {
-            secondBody.node?.removeFromParent()
-            
-            if isGameWon() {
-                let youWinScene = GameOverScene(size: self.frame.size, playerWon: true)
-                self.view?.presentScene(youWinScene)
+                secondBody.node?.removeFromParent()
+                
+                if isGameWon() {
+                    let youWinScene = GameOverScene(size: self.frame.size, playerWon: true)
+                    self.view?.presentScene(youWinScene)
+                }
+
+                // Check if the ball's horizontal velocity is too low and adjust if necessary
+                let minHorizontalVelocity: CGFloat = 10  // Set to the minimum horizontal speed you want
+                if abs(firstBody.velocity.dx) < minHorizontalVelocity {
+                    firstBody.velocity.dx = firstBody.velocity.dx >= 0 ? minHorizontalVelocity : -minHorizontalVelocity
+                }
             }
-        }
-        
-        // Handle ball and paddle contact
+            
+        // If the ball hits the paddle
         if firstBody.categoryBitMask == ballCategory && secondBody.categoryBitMask == paddleCategory {
-            print("first body is ball, second body is paddle")
-            // Calculate where the ball hit the paddle relative to the paddle's center
+            // Calculate where the ball hit the paddle, relative to the paddle's center
             let hitLocation = contact.contactPoint.x - secondBody.node!.position.x
-            print("paddle center: %d", hitLocation)
 
             // Use the hitLocation to adjust the ball's velocity
-            let ballVelocityY = abs(firstBody.velocity.dy)
-            let ballVelocityX = hitLocation * 10  // Adjust the multiplier as needed to get the desired effect
-            firstBody.velocity = CGVector(dx: ballVelocityX, dy: ballVelocityY)
+            let minVelocityX: CGFloat = 10  // This will be the velocity when the ball hits the paddle in the center
+            let maxVelocityX: CGFloat = 30  // This will be the velocity when the ball hits the paddle at the very edge
+            let velocityXRange = maxVelocityX - minVelocityX
+            let paddleWidth = secondBody.node!.frame.width
+            let velocityX = minVelocityX + velocityXRange * abs(hitLocation / (paddleWidth / 2))
+
+            let velocityDirection: CGFloat = hitLocation > 0 ? 1 : -1  // The direction depends on the hit location
+
+            // Always maintain the same vertical velocity
+            let velocityY = abs(firstBody.velocity.dy)
+
+            firstBody.velocity = CGVector(dx: velocityX * velocityDirection, dy: velocityY)
         }
     }
     
@@ -221,7 +234,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Apply the impulse to the ball at 45 degree angle
         let angleInRadians = CGFloat.pi / 4
         let impulseVector = CGVector(dx: cos(angleInRadians) * direction, dy: sin(angleInRadians))
-        let impulseMagnitude: CGFloat = 30  // Adjust this as needed
+        let impulseMagnitude: CGFloat = 3  // Adjust this as needed
         ball.physicsBody?.applyImpulse(CGVector(dx: impulseVector.dx * impulseMagnitude, dy: impulseVector.dy * impulseMagnitude))
 
         ballIsInMotion = true
